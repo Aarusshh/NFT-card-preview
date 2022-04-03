@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Very-dark-blue: hsl(217, 54%, 11%);
+    --darker-blue: hsl(216, 50%, 16%);
+    --dark-blue: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan-us: hsl(178, 100%, 50%);
+}
+
+body {
+    background-color: var(--Very-dark-blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 1px);
+    font-family: 'outfit', sans-serif;
+
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+
+}
+
+
+hr {
+    color: var(--Soft-blue);
+    margin: 1rem 0;
+}
+
+
+.container {
+    background-color: var(--darker-blue);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    box-shadow: 15px 8px 100px rgba(0, 0, 0, 0.6);
+    /* x,y,z axis 👆 */
+}
+
+.container img {
+    border-radius: 1rem;
+}
+
+.container h1 {
+    margin: 1.5rem 0;
+    letter-spacing: 3px;
+
+}
+
+.container p {
+    font-size: 1.4rem;
+    color: var(--Soft-blue);
+}
+
+.container-img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 0rem;
+    font-size: 1.2rem;
+
+}
+
+.container-img img {
+    margin-right: .625rem
+}
+
+
+.container ul li:first-child {
+    color: var(--Cyan-us);
+}
+
+.container ul li:last-child {
+    color: var(--Soft-blue);
+}
+
+.ending img {
+    width: 3rem;
+    border: 1px white solid;
+    margin-right: 20px;
+    border-radius: 50%;
+}
+
+.ending p {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 2px;
+}
+.ending {
+    margin-bottom: 1rem;
+}
+
+.container span {
+    color: var(--White);
+}
+
+.ending span:hover {
+
+    color: var(--Cyan-us);
+    cursor: pointer;
+}
+
+.container h1:hover {
+
+    color: var(--Cyan-us);
+    cursor: pointer;
+}
+
+.nft-pic {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    z-index: 9999;
+    background-color: hsl(178, 100%, 50%, 70%);
+    height: 100%;
+    width: 100%;
+    border-radius: 1rem;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.attribution {
+
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+
+}
+
+.attribution a {
+    text-decoration: none;
+    color: var(--Cyan-us);
+}
+
+@media (min-width:450px) {
+
+    .container {
+        width: 500px;
+    }
+
+}
