@@ -46,6 +46,7 @@ hr {
 footer {
     text-align:center;
 }
+
 .container {
     background-color: var(--darker-blue);
     padding: 2rem;
@@ -155,6 +156,8 @@ footer {
 
     font-size: 1.2rem;
     letter-spacing: 3px;
+    text-align:center;
+    
 
 }
 
