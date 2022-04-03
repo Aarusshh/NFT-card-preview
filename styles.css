@@ -43,7 +43,9 @@ hr {
     margin: 1rem 0;
 }
 
-
+footer {
+    text-align:center;
+}
 .container {
     background-color: var(--darker-blue);
     padding: 2rem;
@@ -147,6 +149,7 @@ hr {
 .overlay:hover {
     opacity: 1;
 }
+
 
 .attribution {
 
